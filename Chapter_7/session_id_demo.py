@@ -1,13 +1,10 @@
 import streamlit as st
-from streamlit.report_thread import get_report_ctx
-from streamlit.server.server import Server
+import uuid
 
-all_sessions = Server.get_current()._session_info_by_id
+# Check if session ID already exists, if not, create one
+if 'session_id' not in st.session_state:
+    st.session_state.session_id = str(uuid.uuid4())
 
-session_id = get_report_ctx().session_id
-session_number = list(all_sessions.keys()).index(session_id) + 1
-
-st.title("Session ID #"+str(session_number))
-st.header("Id of this session is: " + session_id)
-st.subheader("All sessions ("+str(len(all_sessions))+") :")
-st.write(all_sessions)
+# Access and display the session ID
+st.title('Your session ID is:')
+st.subheader(st.session_state.session_id)

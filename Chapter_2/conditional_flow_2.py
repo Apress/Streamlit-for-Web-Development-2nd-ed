@@ -1,12 +1,14 @@
 import streamlit as st
 
-def display_name():
-    st.info('**Name:** %s' % (name))
+# Function to display the name
+def display_name(name):
+    st.info(f'**Name:** {name}')
 
+# Input for name
 name = st.text_input('Please enter your name')
 
+# Check if name is entered
 if not name:
     st.error('No name entered')
-    st.stop()
-
-display_name()
+else:
+    display_name(name)

@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from DataBase import Base
+from DataBase.Base import Base
 
 
 class Employees(Base):

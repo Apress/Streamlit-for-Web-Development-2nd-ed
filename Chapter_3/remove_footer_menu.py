@@ -1,13 +1,14 @@
-hide_footer_style = '''
-<style>
-.reportview-container .main footer {visibility: hidden;}
-'''
-st.markdown(hide_footer_style, unsafe_allow_html=True)
-
-hide_menu_style = '''
-<style>
-#MainMenu {visibility: hidden;}
-</style>
-'''
-
-st.markdown(hide_menu_style, unsafe_allow_html=True)
+# Custom CSS to hide header and footer
+hide_streamlit_style = """
+    <style>
+    /* Hide Streamlit header */
+    header {
+        visibility: hidden;
+    }
+    /* Hide Streamlit footer */
+    footer {
+        visibility: hidden;
+    }
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)

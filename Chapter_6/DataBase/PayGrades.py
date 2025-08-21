@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from DataBase import Base
+from DataBase.Base import Base
 
 
 class PayGrades(Base):
@@ -17,3 +17,4 @@ class PayGrades(Base):
             "reimbursement": self.reimbursement,
             "bonuses": self.bonuses
         }
+        
