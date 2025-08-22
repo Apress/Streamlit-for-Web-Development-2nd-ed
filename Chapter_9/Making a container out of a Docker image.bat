@@ -1,0 +1,1 @@
+docker run -d -p 8501:8501 <CUSTOM_IMAGE_NAME>:latest

@@ -1,0 +1,1 @@
+docker build -t <CUSTOM_IMAGE_NAME>:latest .

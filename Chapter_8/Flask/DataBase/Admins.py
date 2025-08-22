@@ -1,7 +1,5 @@
 from sqlalchemy import Column, Integer, String
-
 from .Base import Base
-
 class Admins(Base):
     __tablename__ = 'admins'
     id = Column(Integer, primary_key=True)
