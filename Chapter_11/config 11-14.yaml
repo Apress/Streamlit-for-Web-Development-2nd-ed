@@ -1,0 +1,6 @@
+# Traffic insights database credentials dictionary
+database_credentials = {
+"username": "<username>",
+"password": "<password>",
+"port": "<port>"
+}
