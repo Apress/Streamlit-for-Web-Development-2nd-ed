@@ -1,0 +1,13 @@
+{
+   "name": "rating_star",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+     "@mui/material": "ˆ5.0.6",
+     ...
+   },
+   "scripts": ...,
+   "eslintConfig": ...,
+   "browserslist": ...,
+   "homepage": ". "
+}
